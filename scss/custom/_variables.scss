@@ -29,22 +29,22 @@ $box-shadow-top: 0 -1px 5px 1px $shadow; //footer's box shadow
 //Fonts
 @font-face {
   font-family: "Karla";
-  src: url("../fonts/Karla-VariableFont_wght.ttf") format("truetype");
+  src: url("../assets/fonts/Karla-Italic-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Karla Italic";
-  src: url("../fonts/Karla-Italic-VariableFont_wght.ttf") format("truetype");
+  src: url("../assets/fonts/Karla-Italic-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Average";
-  src: url("../fonts/Average-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/Average-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Caveat";
-  src: url("../fonts/Caveat-VariableFont_wght.ttf") format("truetype");
+  src: url("../assets/fonts/Caveat-VariableFont_wght.ttf") format("truetype");
 }
 
 
