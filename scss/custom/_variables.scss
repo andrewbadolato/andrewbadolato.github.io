@@ -1,0 +1,62 @@
+//Colors
+$white: #ffffff;
+$light: #cbe6da;
+$dark: #04131a;
+$primary: #13795b;
+$secondary: #ff7f50;
+$info: #f93957;
+$success: #1dc200;
+$warning: #ffca3b;
+$danger: #ff0051;
+$shadow: #999999;
+
+//Accessible contrast colors (with main color above as background)
+$light-contrast: #4f675d;
+$dark-contrast: #717e86;
+$primary-contrast: #87ae73;
+$secondary-contrast: #7a0300;
+$info-contrast: #005d6b;
+$success-contrast: #004700;
+$warning-contrast: #775400;
+$danger-contrast: #3c0000;
+$shadow-contrast: #303030;
+
+//Shadows
+$drop-shadow: drop-shadow(5px 5px 5px $shadow); //use as variable for a "filter" declaration
+$box-shadow: 0 1px 5px 1px $shadow; //use as a variable for a "box-shadow" declaration
+$box-shadow-top: 0 -1px 5px 1px $shadow; //footer's box shadow
+
+//BS Variable Changes
+$link-color: $primary;
+$headings-color: $primary;
+$link-color-dark: $primary-contrast;
+$headings-color-dark: $primary-contrast;
+
+//Navbar Size
+$navbar-height: 90px;
+
+//Fonts
+@font-face {
+  font-family: "Karla";
+  src: url("../assets/fonts/Karla-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Karla Italic";
+  src: url("../assets/fonts/Karla-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Average";
+  src: url("../assets/fonts/Average-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url("../assets/fonts/Caveat-VariableFont_wght.ttf") format("truetype");
+}
+
+
+$sans: "Karla";
+$serif: "Average", serif;
+$headings: "Caveat", "Karla", Arial, sans-serif;

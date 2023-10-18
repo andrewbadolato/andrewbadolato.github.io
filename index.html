@@ -1,1 +1,335 @@
+<!doctype html>
+<html lang="en">
 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>J. Andrew Badolato | About Me</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  </head>
+
+  <body>
+    <header class="position-fixed h-auto">
+      <nav class="navbar position-fixed navbar-expand-md bg-body-tertiary px-3 vw-100" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand pe-3" href="#"><img class="me-3" src="assets/img/Cat Icon.svg"><span>J. Andrew Badolato</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav w-100">
+              <li class="nav-item">
+                <a class="nav-link active" href="#who-i-am">Who I Am</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work-experience">Work Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+            </ul>
+            <ul class="nav" id="theme">
+              <li class="nav-item dropdown ms-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                  <symbol id="circle-half" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+                  </symbol>
+                  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+                    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+                    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+                  </symbol>
+                  <symbol id="sun-fill" viewBox="0 0 16 16">
+                    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+                  </symbol>
+                </svg>
+                <button class="btn btn-primary nav-link py-2 px-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (dark)">
+                  <svg class="bi my-1 theme-icon-active">
+                    <use href="#moon-stars-fill"></use>
+                  </svg>
+                  <span class="d-sm-none ms-2" id="bd-theme-text">Toggle theme</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                  <li>
+                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                      <svg class="bi me-2 theme-icon">
+                        <use href="#sun-fill"></use>
+                      </svg>
+                      <span>Light</span>
+                      <svg class="bi ms-auto d-none">
+                        <use href="#check2"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="dark" aria-pressed="true">
+                      <svg class="bi me-2 theme-icon">
+                        <use href="#moon-stars-fill"></use>
+                      </svg>
+                      <span>Dark</span>
+                      <svg class="bi ms-auto d-none">
+                        <use href="#check2"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                      <svg class="bi me-2 theme-icon">
+                        <use href="#circle-half"></use>
+                      </svg>
+                      <span>Auto</span>
+                      <svg class="bi ms-auto d-none">
+                        <use href="#check2"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container-fluid g-0 position-relative h-100 py-5 d-flex" id="hero">
+        <div class="container-md d-flex flex-column h-100 py-5 text-left">
+          <div class="row">
+            <h1 class="display-4">About Me</h1>
+          </div>
+          <div class="row">
+            <p class="lead mb-4">I'm a goal-driven, self-starting, and articulate technical writer/front-end developer with expertise in SASS, CSS, HTML5, and web development. I have familiarity with JavaScript, Node.js, Git, Azure, and front-end frameworks such as Bootstrap. My CMS experience includes Sitecore and WordPress. I learn quickly while seeking new challenges, understanding, and skills. Strong communicator focused on effective and clear communication across diverse teams; specializes in documentation and instructions for technical and non-technical audiences.</p>
+            <div class="gap-2 d-sm-flex">
+              <a href="assets/files/ABadolatoResume2023.pdf" aria-label="Download my resume" class="btn btn-primary icon-link icon-link-hover" role="button" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                  <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"></path>
+                  <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"></path>
+                </svg> Download My Resume</a>
+              <a class="btn btn-primary icon-link icon-link-hover" aria-label="LinkedIn profile" href="https://www.linkedin.com/in/jandrewbadolato/" role="button" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+                </svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-md position-relative">
+        <div id="resume" data-bs-spy="scroll" data-bs-root-margin="0px 0px 100px" data-bs-target="#navbar" data-bs-smooth-scroll="true" tabindex="0">
+          <div class="row p-2 pt-4" class="h-auto">
+            <h2 id="who-i-am">Who I Am</h2>
+            <div class="col-md-6">
+              <h3>What I Provide</h3>
+              <ul>
+                <li>15 years' experience as a marketing professional working within writing and development functions</li>
+                <li>Over 10 years' experience in proposal management, project-managing responses for the IT and civil engineering industries</li>
+                <li>Nearly 5 years' experience in front-end development</li>
+                <li>Strong problem-solving skills and the tenacity to discover solutions</li>
+                <li>Excellent writing and communication skills with technical and non-technical professionals</li>
+                <li>Adaptiveness to your processes, branding, and style guidelines, whether in development, technical writing, copywriting, or editing</li>
+                <li>Intellectual curiosity combined with a focus on practical application</li>
+              </ul>
+              <h3>What I'm Seeking</h3>
+              <ul>
+                <li>A close-knit, collaborative team</li>
+                <li>Professional and skill-set growth opportunities</li>
+                <li>A variety of tasks and projects</li>
+                <li>A 401(k), health/dental insurance, and&#8212;if you're local to the Baltimore area&#8212;a hybrid 3/2 or 2/3 office schedule</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h3>Key Skills</h3>
+              <ul>
+                <li>Cascading Style Sheets (CSS)</li>
+                <li>SASS</li>
+                <li>HTML/HTML5</li>
+                <li>Web Development/Front-End Development</li>
+                <li>Technical Writing and Creative Writing</li>
+                <li>Git</li>
+                <li>JavaScript including GSAP and amCharts</li>
+                <li>Bootstrap</li>
+                <li>Node.js</li>
+                <li>Mobile-first and Responsive Design</li>
+                <li>Adobe Photoshop/Illustrator/Acrobat</li>
+                <li>Content Management Systems Including Sitecore and WordPress</li>
+                <li>Microsoft Office, Azure, and Productivity Tools Including Teams and SharePoint</li>
+                <li>Agile Methodologies</li>
+                <li>Analytical Skills</li>
+                <li>Communication, Collaboration, and Teamwork</li>
+                <li>Proofreading and Copyediting</li>
+                <li>Seeks Challenges</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row p-2 pt-4" class="h-auto">
+            <h2 id="work-experience">My Work Experience</h2>
+            <p>In 15 years as a marketing professional, I've held writing and technical positions across multiple industries. Half of this time was spent in smaller organizations where adaptivity and the ability to wear multiple hats was essential.</p>
+            <div class="col-md-8">
+              <article>
+                <h3>Web Developer</h3>
+                <h4>April 2021&#8211;Present, TEKsystems</h4>
+                <ul>
+                  <li>Built and styled Sitecore page and branch templates for new page types, utilizing HTML, CSS/SASS, and Sitecore tools. Followed Adobe XD and PDF mockups provided by the design team.</li>
+                  <li>Expanded the Web team's component guide, providing technical documentation and instructions for using existing site components, style selections in Sitecore, and templated HTML/HTML5 and CSS.</li>
+                  <li>Trained and provided manuals for EMEA and APAC content managers adding and editing article content.</li>
+                  <li>Enhanced Node.js package and Gulpfile.js for building stylesheets.</li>
+                  <li>Continued performing and maintaining the tasks and projects I began working on in my previous role as Sitecore Administrator.</li>
+                  <li>Help provide technical communication between the marketing web team and the technical development team.</li>
+                  <li>Support department's creative team with setting up and styling email templates in Salesforce Marketing Cloud based on PDF and Adobe XD mockups.</li>
+                </ul>
+              </article>
+              <article>
+                <h3>Senior Proposal Writer</h3>
+                <h4>May 2023&#8211;July 2023, TEKsystems</h4>
+                <ul>
+                  <li>This was a temporary assignment to support my previous team while they backfilled a role.</li>
+                  <li>Created clear and concise proposals and instruction documents for technical and non-technical audiences, facilitating effective communication across various roles and industries.</li>
+                  <li>Managed the proposal process for sales teams globally from kick-off through submission.</li>
+                  <li>Provided content for the proposal team's content database.</li>
+                  <li>Peer-reviewed and copyedited teammates' proposal drafts for quality assurance</li>
+                </ul>
+              </article>
+              <article>
+                <h3>Sitecore Administrator/Front End Development</h3>
+                <h4>May 2019&#8211;April 2021, TEKsystems</h4>
+                <ul>
+                  <li>This was a temporary assignment to support my previous team while they backfilled a role.</li>
+                  <li>Created clear and concise proposals and instruction documents for technical and non-technical audiences, facilitating effective communication across various roles and industries.</li>
+                  <li>Managed the proposal process for sales teams globally from kick-off through submission.</li>
+                  <li>Provided content for the proposal team's content database.</li>
+                  <li>Peer-reviewed and copyedited teammates' proposal drafts for quality assurance</li>
+                </ul>
+              </article>
+              <article>
+                <h3>Proposal Writer</h3>
+                <h4>November 2016&#8211;April 2021, TEKsystems</h4>
+                <ul>
+                  <li>Created clear and concise proposals and instruction documents for technical and non-technical audiences, facilitating effective communication across various roles and industries.</li>
+                  <li>Managed the proposal process for sales teams globally from kick-off through submission.</li>
+                  <li>Provided content and technical support for the proposal team's content database, SharePoint site, and bid submission and tracking system. Also served as a liaison between the proposal team and the in-house SharePoint development team to refine our bid submission and tracking system.</li>
+                  <li>Peer-reviewed and copyedited teammates' proposal drafts for quality assurance.</li>
+                </ul>
+              </article>
+              <article>
+                <h3>Proposal Writer/Marketing Coordinator</h3>
+                <h4>April 2012&#8211;August 2016, J.A. Rice, Inc.</h4>
+                <ul>
+                  <li>Updated company website on WordPress, served as a main point of contact for marketing emails, and coordinated corporate rebranding.</li>
+                  <li>Created proposals and instruction documents for technical and non-technical audiences, facilitating communication across roles and industries. Administered contracts and served as first point of contact.</li>
+                  <li>Configured and troubleshooted common office software for myself and other members of the team, sometimes assisting our IT person when busy.</li>
+                  <li>Wrote and copyedited new website and marketing content.</li>
+                  <li>Used Adobe Photoshop and Illustrator to crop, format, and optimize images for the website.</li>
+                  <li>Supported executive and project staff in a woman-owned professional land surveying firm.</li>
+                </ul>
+              </article>
+              <article>
+                <h3>Proposal Writer/Marketing Coordinator</h3>
+                <h4>April 2012&#8211;August 2016, J.A. Rice, Inc.</h4>
+                <ul>
+                  <li>Updated company website on WordPress, served as a main point of contact for marketing emails, and coordinated corporate rebranding.</li>
+                  <li>Created proposals and instruction documents for technical and non-technical audiences, facilitating communication across roles and industries. Administered contracts and served as first point of contact.</li>
+                  <li>Configured and troubleshooted common office software for myself and other members of the team, sometimes assisting our IT person when busy.</li>
+                  <li>Wrote and copyedited new website and marketing content.</li>
+                  <li>Used Adobe Photoshop and Illustrator to crop, format, and optimize images for the website.</li>
+                  <li>Supported executive and project staff in a woman-owned professional land surveying firm.</li>
+                </ul>
+              </article>
+              <article>
+                <h3>Regulatory Affairs/Marketing Assistant</h3>
+                <h4>September 2008&#8211;January 2011, Advanced Biotechnologies, Inc.</h4>
+                <ul>
+                  <li>Created and edited scientific and administrative documentation including collaborating with the scientific staff to develop and update SOPs.</li>
+                  <li>Developed and posted content for the company website using Drupal.</li>
+                  <li>Maintained the marketing department wiki on the company intranet.</li>
+                  <li>Supported regulatory, scientific, and executive staff in a biotechnology firm.</li>
+                  <li>Coordinated redesign and printed company product catalog and marketing materials.</li>
+                </ul>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <!-- <p>PLACEHOLDER FOR AN IMAGE</p> -->
+            </div>
+          </div>
+          <div class="row p-2 pt-4" class="h-auto">
+            <div class="col-md-4">
+              <!-- <p>PLACEHOLDER FOR AN IMAGE</p> -->
+            </div>
+            <div class="col-md-8">
+              <h2 id="education">My Education</h2>
+              <article>
+                <h3>Bachelor of Science (BS), Computer Information Systems</h3>
+                <h4>2015&#8211;2018, Stevenson University</h4>
+                <ul>
+                  <li>Focus on software development and design</li>
+                  <li>Graduated with honors (GPA 3.78)</li>
+                </ul>
+              </article>
+              <article>
+                <h3>Bachelor of Arts (BA), English Language and Literature</h3>
+                <h4>2002&#8211;2006, Stevenson University</h4>
+                <ul>
+                  <li>Most extracurricular campus activities were web-focused and included: webmaster for local chapter of English honor society, online editor for school newspaper's website, and co-op participation with the Web office to help maintain the school website. Also contributed to the school newspaper and literary magazine.</li>
+                  <li>Graduated with honors (GPA 3.68)</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+          <div class="h-auto">
+            <div class="row p-2 pt-4">
+              <h2 id="projects">Projects</h2>
+              <article>
+                <h3>Development</h3>
+                <p>The following links are examples of features where I've had the main responsibility for build-out, development, and SME coordination (typically with members of the marketing team):</p>
+                <ul>
+                  <li><a target="_blank" rel="noreferrer" href="https://www.teksystems.com/en/insights/state-of-digital-transformation-2023">State of Digital Transformation 2023</a></li>
+                  <li><a target="_blank" rel="noreferrer" href="https://www.teksystems.com/en/insights/state-of-digital-transformation-2022">State of Digital Transformation 2022</a></li>
+                  <li><a target="_blank" rel="noreferrer" href="https://www.teksystems.com/en/who-we-are">TEKsystems: Who We Are</a></li>
+                  <li><a target="_blank" rel="noreferrer" href="https://www.teksystems.com/en/who-we-are/diversity-equity-inclusion-at-teksystems">TEKsystems: Diversity, Equity and Inclusion</a></li>
+                  <li><a target="_blank" rel="noreferrer" href="https://www.teksystems.com/en/events">TEKsystems: Events Landing Page</a></li>
+                </ul>
+                <p>The above pages were built in Sitecore, but I also have some WordPress experience.</p>
+              </article>
+              <article>
+                <h3>Technical Writing</h3>
+                <p>As a marketing writer who also understands technology, I've refined my technical writing skills by creating documentation and other materials to train and inform both technical and non-technical users. I pride myself on my ability to mentally place myself into my reader's position and create easy-to-follow, useful documents. These include:</p>
+                <ul>
+                  <li>Instruction guides and manuals</li>
+                  <li>Code documentation</li>
+                  <li>Instructional wiki pages</li>
+                  <li>Instructional presentations</li>
+                  <li>Standard Operation Procedures (SOPs)</li>
+                </ul>
+                <p>The documents I prepare are typically based on topics my teammates and coworkers ask about. One of my specialties includes step-by-step instructions for configuring web components and building page layouts. This allows my teammates who specialize in content admin to set up webpages that use complex components and effects with minimal help.</p>
+              </article>
+              <article>
+                <h3>Proposal Writing and Management</h3>
+                <p>I've coordinated proposal responses, project-managed responses, and written proposal content for submissions to the clients within the following industries:</p>
+                <ul>
+                  <li>State and local governments across the United States</li>
+                  <li>Education</li>
+                  <li>Healthcare</li>
+                  <li>Financial services</li>
+                  <li>Energy</li>
+                  <li>Architecture/Engineering/Construction</li>
+                </ul>
+                <p>My exceptional organization skills equip me to coordinate complex response packages, while my writing skills let me transform SMEs' bullet points and notes into clear, concise RFP answers. I especially love when a SME who may be overwhelmed at the idea of writing final content for a response feels like they can comfortably provide their thoughts and ideas to me so I can help them make their expertise shine within a response.</p>
+                <p>Additionally, I'm mindful not only of RFP formatting and style requirements, but also of organizational style and branding guidelines.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-md">
+        <div class="row p-2 pt-4">
+          <!-- <p>This is a footer</p> -->
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+  </body>
+
+</html>

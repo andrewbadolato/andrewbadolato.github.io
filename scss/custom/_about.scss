@@ -1,0 +1,104 @@
+p,
+li {
+  word-break: break-word;
+}
+
+header {
+  z-index: $zindex-sticky;
+}
+
+nav .navbar-brand span {
+  display: none;
+
+  @media screen and (min-width: 393px) {
+    display: inline;
+  }
+}
+
+li.nav-item.dropdown button svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--bs-nav-link-color);
+}
+
+button#bd-theme:hover > svg,
+button#bd-theme[aria-expanded='true'] > svg,
+button#bd-theme.dropdown-toggle:hover::after,
+button#bd-theme.dropdown-toggle[aria-expanded='true']::after {
+  fill: var(--bs-btn-hover-color);
+  color: var(--bs-btn-hover-color);
+
+  [data-bs-theme='dark'] & {
+    fill: var(--bs-body-bg-dark);
+    color: var(--bs-body-bg-dark);
+  }
+}
+
+ul.dropdown-menu.dropdown-menu-end.show .dropdown-item:focus svg,
+ul.dropdown-menu.dropdown-menu-end.show .dropdown-item:focus span {
+    fill: var(--bs-dropdown-link-active-color);
+    color: var(--bs-dropdown-link-active-color);
+}
+
+ul.dropdown-menu.dropdown-menu-end.show .dropdown-item.active svg,
+ul.dropdown-menu.dropdown-menu-end.show .dropdown-item.active span {
+  fill: var(--bs-dropdown-link-active-color);
+
+ }
+
+ main {
+  padding-top: $navbar-height;
+}
+
+#hero {
+  background-color: $dark;
+  background: url('../assets/img/about-me-hero.png');
+  background-size: cover;
+  min-height: calc(100vh - $navbar-height);
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 100vw;
+}
+
+#hero > .container-md::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color: $light-contrast;
+  background: linear-gradient(rgb($light-contrast, 0.75) 80%, $body-bg 98%);
+  z-index: 0;
+
+  [data-bs-theme='dark'] & {
+    background: linear-gradient(
+      rgb($light-contrast, 0.75) 80%,
+      $body-bg-dark 98%
+    );
+  }
+}
+
+#hero > .container-md .row {
+  z-index: 1;
+
+  h1 {
+    [data-bs-theme='light'] & {
+      color: $headings-color-dark;
+    }
+  }
+
+  p {
+    color: $body-color-dark;
+  }
+}
+
+div#resume {
+  h2 {
+    scroll-margin-top: calc($navbar-height + 1em);
+  }
+
+  h4 {
+    font-style: italic;
+  }
+}
