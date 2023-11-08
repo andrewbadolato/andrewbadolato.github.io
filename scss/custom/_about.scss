@@ -15,6 +15,15 @@ nav .navbar-brand span {
   }
 }
 
+.navbar-nav .nav-link.active {
+  font-weight: 600;
+  color: $link-color;
+
+  [data-bs-theme='dark'] & {
+    color: $link-color-dark;
+  }
+}
+
 li.nav-item.dropdown button svg {
   width: 20px;
   height: 20px;
@@ -36,17 +45,16 @@ button#bd-theme.dropdown-toggle[aria-expanded='true']::after {
 
 ul.dropdown-menu.dropdown-menu-end.show .dropdown-item:focus svg,
 ul.dropdown-menu.dropdown-menu-end.show .dropdown-item:focus span {
-    fill: var(--bs-dropdown-link-active-color);
-    color: var(--bs-dropdown-link-active-color);
+  fill: var(--bs-dropdown-link-active-color);
+  color: var(--bs-dropdown-link-active-color);
 }
 
 ul.dropdown-menu.dropdown-menu-end.show .dropdown-item.active svg,
 ul.dropdown-menu.dropdown-menu-end.show .dropdown-item.active span {
   fill: var(--bs-dropdown-link-active-color);
+}
 
- }
-
- main {
+main {
   padding-top: $navbar-height;
 }
 
