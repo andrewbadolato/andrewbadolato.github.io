@@ -121,6 +121,12 @@ div#resume {
   max-width: 100vw;
   position: relative;
 
+    h3, h4 {
+    [data-bs-theme='dark'] & {
+      color: $card-title-color-dark;
+    }
+  }
+
   .row {
     z-index: 1;
   }
