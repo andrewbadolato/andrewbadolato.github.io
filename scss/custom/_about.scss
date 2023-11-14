@@ -1,3 +1,7 @@
+html {
+    scroll-padding: $navbar-height;
+}
+
 p,
 li {
   word-break: break-word;
@@ -157,4 +161,18 @@ div#resume {
       $body-bg-dark 100%
     );
   }
+}
+
+ul.icon-list  {
+    padding-left: 30px;
+
+    li {
+      position: relative;
+      margin-bottom: 0.5em;
+
+      i {
+          position: absolute;
+          margin-left: -1.5em;
+      }
+    }
 }
