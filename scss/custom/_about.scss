@@ -1,10 +1,22 @@
 html {
-    scroll-padding: $navbar-height;
+  scroll-padding: $navbar-height;
+}
+
+h2 {
+  color: $dark;
+
+  [data-bs-theme='dark'] & {
+    color: $secondary;
+  }
 }
 
 p,
 li {
   word-break: break-word;
+}
+
+li::marker {
+  color: $secondary;
 }
 
 header {
@@ -19,12 +31,24 @@ nav .navbar-brand span {
   }
 }
 
-.navbar-nav .nav-link.active {
-  font-weight: 600;
-  color: $link-color;
+.navbar-nav .nav-link {
+  font-weight: bold;
 
-  [data-bs-theme='dark'] & {
-    color: $link-color-dark;
+  &:hover {
+    color: $secondary;
+
+    [data-bs-theme='dark'] & {
+      color: $secondary;
+    }
+  }
+
+  &.active {
+    font-weight: 600;
+    color: $link-color;
+
+    [data-bs-theme='dark'] & {
+      color: $link-color-dark;
+    }
   }
 }
 
@@ -163,16 +187,20 @@ div#resume {
   }
 }
 
-ul.icon-list  {
-    padding-left: 30px;
+#education {
+  z-index: 1;
+}
 
-    li {
-      position: relative;
-      margin-bottom: 0.5em;
+ul.icon-list {
+  padding-left: 30px;
 
-      i {
-          position: absolute;
-          margin-left: -1.5em;
-      }
+  li {
+    position: relative;
+    margin-bottom: 0.5em;
+
+    i {
+      position: absolute;
+      margin-left: -1.5em;
     }
+  }
 }
