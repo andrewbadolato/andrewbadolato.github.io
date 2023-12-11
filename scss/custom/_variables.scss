@@ -25,6 +25,7 @@ $shadow-contrast: #303030;
 $drop-shadow: drop-shadow(5px 5px 5px $shadow); //use as variable for a "filter" declaration
 $box-shadow: 0 1px 5px 1px $shadow; //use as a variable for a "box-shadow" declaration
 $box-shadow-top: 0 -1px 5px 1px $shadow; //footer's box shadow
+$text-shadow: 1px 1px 1px #303030;
 
 //BS Variable Changes
 $link-color: $primary;
